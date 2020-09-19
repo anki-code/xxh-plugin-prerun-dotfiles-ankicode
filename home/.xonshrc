@@ -1,1 +1,1 @@
-#xontrib load pipeliner output_search prompt_bar argcomplete
+xontrib load pipeliner output_search argcomplete prompt_bar
