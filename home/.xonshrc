@@ -17,4 +17,4 @@ aliases['ll'] = _ll
 # Using rsync instead of cp to show progress
 aliases['cp'] = ['rsync', '--progress']
 
-xontrib load pipeliner output_search argcomplete prompt_bar whole_word_jumping
+xontrib load pipeliner output_search argcomplete whole_word_jumping onepath prompt_bar
