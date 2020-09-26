@@ -2,3 +2,4 @@ xontrib-pipeliner        # Let your pipe lines flow thru the Python code in xons
 xontrib-output-search    # Get identifiers, paths, URLs and words from the previous command output and use them for the next command in xonsh shell. 
 xontrib-prompt-bar       # The bar prompt for xonsh shell with customizable sections.
 xontrib-argcomplete      # Argcomplete support to tab completion of python and xonsh scripts in xonsh shell. 
+xontrib-onepath
