@@ -1,20 +1,34 @@
+#
+# Most of this are from aswesome xonshrc - https://github.com/anki-code/awesome-xonshrc
+#
+
 $XONSH_SHOW_TRACEBACK = True
 $TITLE='{current_job:{} | }{hostname} {user} {cwd}'
-
+$HISTCONTROL='ignoredups,erasedups'
 $FOREIGN_ALIASES_SUPPRESS_SKIP_MESSAGE = True
 $XONSH_COLOR_STYLE = "paraiso-dark"
 $COMPLETIONS_CONFIRM = True
 
+
 aliases['-'] = 'cd -'
 aliases['..'] = 'cd ..'
 
-# ll is ls: colored, columnar, directories first
+
 def _ll(args):
      with ${...}.swap(LC_COLLATE='C'):
          ls --group-directories-first -lah --color @(args)
 aliases['ll'] = _ll
 
-# Using rsync instead of cp to show progress
+
+def _md(args, stdin=None):
+    mkdir -p @(args[0]) && cd @(args[0])
+aliases['md'] = _md
+del _md
+
+
 aliases['cp'] = ['rsync', '--progress']
+aliases['greps'] = 'grep -ri'
+aliases['http-here'] = 'python3 -m http.server'
+
 
 xontrib load pipeliner output_search argcomplete whole_word_jumping onepath prompt_bar
