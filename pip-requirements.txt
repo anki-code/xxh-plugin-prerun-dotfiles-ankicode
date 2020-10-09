@@ -3,3 +3,4 @@ xontrib-output-search    # Get identifiers, paths, URLs and words from the previ
 xontrib-prompt-bar       # The bar prompt for xonsh shell with customizable sections.
 xontrib-argcomplete      # Argcomplete support to tab completion of python and xonsh scripts in xonsh shell. 
 xontrib-onepath          # Associate files with app or alias and run it without preceding commands in xonsh shell. 
+xontrib-sh               # Paste and run commands from bash, zsh, fish in xonsh shell. 
