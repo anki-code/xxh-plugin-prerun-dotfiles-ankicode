@@ -25,8 +25,8 @@ def _md(args, stdin=None):
 aliases['md'] = _md
 del _md
 
-
-aliases['cp'] = ['rsync', '--progress']
+aliases['ls'] += ['--group-directories-first', '-a']
+aliases['cp'] = ['rsync', '--progress', '--recursive']
 aliases['greps'] = 'grep -ri'
 aliases['http-here'] = 'python3 -m http.server'
 
