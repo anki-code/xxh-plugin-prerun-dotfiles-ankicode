@@ -8,7 +8,7 @@ $HISTCONTROL='ignoredups,erasedups'
 $FOREIGN_ALIASES_SUPPRESS_SKIP_MESSAGE = True
 $XONSH_COLOR_STYLE = "paraiso-dark"
 $COMPLETIONS_CONFIRM = True
-
+$MULTILINE_PROMPT=' '
 
 aliases['-'] = 'cd -'
 aliases['..'] = 'cd ..'
