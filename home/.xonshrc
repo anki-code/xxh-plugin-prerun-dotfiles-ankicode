@@ -16,7 +16,7 @@ aliases['..'] = 'cd ..'
 
 def _ll(args):
      with ${...}.swap(LC_COLLATE='C'):
-         ls --group-directories-first -lah --color @(args)
+         ls --group-directories-first -lAh --color @(args)
 aliases['ll'] = _ll
 
 
@@ -25,10 +25,10 @@ def _md(args, stdin=None):
 aliases['md'] = _md
 del _md
 
-aliases['ls'] += ['--group-directories-first', '-a']
-aliases['cp'] = ['rsync', '--progress', '--recursive']
+aliases['ls'] += ['--group-directories-first', '-A']
+aliases['cp'] = ['rsync', '--progress', '--recursive', '--archive']
 aliases['greps'] = 'grep -ri'
 aliases['http-here'] = 'python3 -m http.server'
 
 
-xontrib load pipeliner output_search argcomplete whole_word_jumping onepath prompt_bar
+xontrib load ergopack
