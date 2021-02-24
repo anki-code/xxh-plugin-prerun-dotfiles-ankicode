@@ -1,1 +1,1 @@
-xontrib-ergopack
+xontrib-ergopack[prompt,onepath]
