@@ -17,14 +17,10 @@ $LESS = "--ignore-case --quit-if-one-screen --quit-on-intr FRXQ"
 aliases['-'] = 'cd -'
 aliases['..'] = 'cd ..'
 aliases['ll'] = lambda args: $[$LC_COLLATE='C' ls --group-directories-first -lAh --color @(args)]
+aliases['md'] = lambda args: execx(f'mkdir {repr(args[0])} && cd {repr(args[0])}')
 aliases['ls'] += ['--group-directories-first', '-A']
 aliases['cp'] = ['rsync', '--progress', '--recursive', '--archive']
 aliases['greps'] = 'grep -ri'
 aliases['http-here'] = 'python3 -m http.server'
-
-def _md(args, stdin=None):
-    mkdir -p @(args[0]) && cd @(args[0])
-aliases['md'] = _md
-del _md
 
 xontrib load ergopack prompt_bar
